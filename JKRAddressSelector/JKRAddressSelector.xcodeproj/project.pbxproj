@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0512502F1E9BCD5C0068615B /* JKRSelectAreaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0512502E1E9BCD5C0068615B /* JKRSelectAreaButton.m */; };
+		051250391E9BD6020068615B /* JKRAreaSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 051250381E9BD6020068615B /* JKRAreaSelectCell.m */; };
 		F37D97891E9B524F00443D05 /* JKRCityData.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D97881E9B524F00443D05 /* JKRCityData.m */; };
 		F37D978C1E9B545F00443D05 /* JKRCityDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D978B1E9B545F00443D05 /* JKRCityDetail.m */; };
 		F37D978F1E9B54B300443D05 /* JKRCityArea.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D978E1E9B54B300443D05 /* JKRCityArea.m */; };
@@ -53,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0512502D1E9BCD5C0068615B /* JKRSelectAreaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRSelectAreaButton.h; sourceTree = "<group>"; };
+		0512502E1E9BCD5C0068615B /* JKRSelectAreaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRSelectAreaButton.m; sourceTree = "<group>"; };
+		051250371E9BD6020068615B /* JKRAreaSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRAreaSelectCell.h; sourceTree = "<group>"; };
+		051250381E9BD6020068615B /* JKRAreaSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRAreaSelectCell.m; sourceTree = "<group>"; };
 		F37D97871E9B524F00443D05 /* JKRCityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCityData.h; sourceTree = "<group>"; };
 		F37D97881E9B524F00443D05 /* JKRCityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRCityData.m; sourceTree = "<group>"; };
 		F37D978A1E9B545F00443D05 /* JKRCityDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCityDetail.h; sourceTree = "<group>"; };
@@ -132,6 +138,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		051250301E9BD38D0068615B /* 国内 */ = {
+			isa = PBXGroup;
+			children = (
+				F39AD4AF1E9B3883003F2279 /* JKRInlandViewController.h */,
+				F39AD4B01E9B3883003F2279 /* JKRInlandViewController.m */,
+				051250321E9BD3A30068615B /* Header */,
+				051250331E9BD3A90068615B /* Cell */,
+			);
+			name = "国内";
+			sourceTree = "<group>";
+		};
+		051250311E9BD3960068615B /* 海外 */ = {
+			isa = PBXGroup;
+			children = (
+				F39AD4B21E9B38B6003F2279 /* JKRForeignViewController.h */,
+				F39AD4B31E9B38B6003F2279 /* JKRForeignViewController.m */,
+			);
+			name = "海外";
+			sourceTree = "<group>";
+		};
+		051250321E9BD3A30068615B /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				F37D97A01E9B9BB700443D05 /* JKRNormalHeader.h */,
+				F37D97A11E9B9BB700443D05 /* JKRNormalHeader.m */,
+				F37D97A31E9B9BCF00443D05 /* JKRSelectHeader.h */,
+				F37D97A41E9B9BCF00443D05 /* JKRSelectHeader.m */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		051250331E9BD3A90068615B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F37D979D1E9B89B800443D05 /* JKRCitySelectCell.h */,
+				F37D979E1E9B89B800443D05 /* JKRCitySelectCell.m */,
+				F37D979A1E9B6DA400443D05 /* JKRInlandCityCell.h */,
+				F37D979B1E9B6DA400443D05 /* JKRInlandCityCell.m */,
+				051250371E9BD6020068615B /* JKRAreaSelectCell.h */,
+				051250381E9BD6020068615B /* JKRAreaSelectCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		051250351E9BD3D90068615B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0512502D1E9BCD5C0068615B /* JKRSelectAreaButton.h */,
+				0512502E1E9BCD5C0068615B /* JKRSelectAreaButton.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		051250361E9BD3F80068615B /* 地址选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				F39AD4AC1E9B329F003F2279 /* JKRSelectAddressController.h */,
+				F39AD4AD1E9B329F003F2279 /* JKRSelectAddressController.m */,
+				051250301E9BD38D0068615B /* 国内 */,
+				051250311E9BD3960068615B /* 海外 */,
+			);
+			name = "地址选择器";
+			sourceTree = "<group>";
+		};
 		F37D97971E9B684A00443D05 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,20 +272,8 @@
 				F39AD4A11E9B1B50003F2279 /* JKRNavigationViewController.m */,
 				F39AD49A1E9B1AEF003F2279 /* JKRRootViewController.h */,
 				F39AD49B1E9B1AEF003F2279 /* JKRRootViewController.m */,
-				F39AD4AC1E9B329F003F2279 /* JKRSelectAddressController.h */,
-				F39AD4AD1E9B329F003F2279 /* JKRSelectAddressController.m */,
-				F39AD4AF1E9B3883003F2279 /* JKRInlandViewController.h */,
-				F39AD4B01E9B3883003F2279 /* JKRInlandViewController.m */,
-				F37D97A01E9B9BB700443D05 /* JKRNormalHeader.h */,
-				F37D97A11E9B9BB700443D05 /* JKRNormalHeader.m */,
-				F37D97A31E9B9BCF00443D05 /* JKRSelectHeader.h */,
-				F37D97A41E9B9BCF00443D05 /* JKRSelectHeader.m */,
-				F37D979D1E9B89B800443D05 /* JKRCitySelectCell.h */,
-				F37D979E1E9B89B800443D05 /* JKRCitySelectCell.m */,
-				F37D979A1E9B6DA400443D05 /* JKRInlandCityCell.h */,
-				F37D979B1E9B6DA400443D05 /* JKRInlandCityCell.m */,
-				F39AD4B21E9B38B6003F2279 /* JKRForeignViewController.h */,
-				F39AD4B31E9B38B6003F2279 /* JKRForeignViewController.m */,
+				051250361E9BD3F80068615B /* 地址选择器 */,
+				051250351E9BD3D90068615B /* Common */,
 				F37D97991E9B688100443D05 /* Category */,
 				F37D97971E9B684A00443D05 /* Data */,
 				F37D97901E9B570600443D05 /* city.plist */,
@@ -395,6 +453,7 @@
 				F37D978C1E9B545F00443D05 /* JKRCityDetail.m in Sources */,
 				F37D979C1E9B6DA400443D05 /* JKRInlandCityCell.m in Sources */,
 				F39AD4AE1E9B329F003F2279 /* JKRSelectAddressController.m in Sources */,
+				0512502F1E9BCD5C0068615B /* JKRSelectAreaButton.m in Sources */,
 				F37D978F1E9B54B300443D05 /* JKRCityArea.m in Sources */,
 				F39AD4BA1E9B3BAC003F2279 /* JKRCity.m in Sources */,
 				F39AD4B41E9B38B6003F2279 /* JKRForeignViewController.m in Sources */,
@@ -405,6 +464,7 @@
 				F37D97A81E9B9EFA00443D05 /* UIView+JKR_Frame.m in Sources */,
 				F39AD49C1E9B1AEF003F2279 /* JKRRootViewController.m in Sources */,
 				F39AD4A21E9B1B50003F2279 /* JKRNavigationViewController.m in Sources */,
+				051250391E9BD6020068615B /* JKRAreaSelectCell.m in Sources */,
 				F37D97A51E9B9BCF00443D05 /* JKRSelectHeader.m in Sources */,
 				F37D97891E9B524F00443D05 /* JKRCityData.m in Sources */,
 				F39AD4991E9B1AE2003F2279 /* AppDelegate+JKRRootViewController.m in Sources */,

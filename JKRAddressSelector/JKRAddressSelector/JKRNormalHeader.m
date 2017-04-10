@@ -31,7 +31,13 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.headerLabel.y = self.height - 26;
+    if (self.height == 44.f) {
+        self.headerLabel.y = 12;
+        self.line.hidden = YES;
+    } else {
+        self.headerLabel.y = 0;
+        self.line.hidden = NO;
+    }
 }
 
 - (void)setTitle:(NSString *)title {

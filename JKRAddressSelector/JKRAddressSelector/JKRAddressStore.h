@@ -13,14 +13,14 @@
 
 @interface JKRAddressStore : NSObject
 
-@property (nonatomic, strong) NSArray<JKRCity *> *cityArray;
-@property (nonatomic, strong) NSArray *cityDataArray;
-@property (nonatomic, strong) JKRCitySection *currentCity;
-@property (nonatomic, strong) JKRCitySection *locationCity;
-@property (nonatomic, strong) JKRCitySection *searchHistoryCity;
-@property (nonatomic, strong) JKRCitySection *hotCity;
-@property (nonatomic, strong) NSArray<JKRCitySection *> *cityList;
-@property (nonatomic, strong) JKRCity *defaultCity;
+@property (nonatomic, strong) NSArray<JKRCity *> *cityArray;              ///< 城市列表
+@property (nonatomic, strong) NSArray *cityDataArray;                     ///< 城市区域列表
+@property (nonatomic, strong) JKRCitySection *currentCity;                ///< 当前选择城市
+@property (nonatomic, strong) JKRCitySection *locationCity;               ///< 当前定位城市
+@property (nonatomic, strong) JKRCitySection *searchHistoryCity;          ///< 搜索历史城市
+@property (nonatomic, strong) JKRCitySection *hotCity;                    ///< 热门城市
+@property (nonatomic, strong) NSArray<JKRCitySection *> *cityList;        ///< 城市拼音分组列表
+@property (nonatomic, strong) JKRCity *defaultCity;                       ///< 占位城市
 
 singleton_interface(JKRAddressStore)
 

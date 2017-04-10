@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JKRSelectAreaButton.h"
 
 @interface JKRSelectHeader : UITableViewHeaderFooterView
+
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) JKRSelectAreaButton *selectAreaButton;
 
 @end
