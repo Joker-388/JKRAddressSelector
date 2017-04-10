@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F37D97891E9B524F00443D05 /* JKRCityData.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D97881E9B524F00443D05 /* JKRCityData.m */; };
+		F37D978C1E9B545F00443D05 /* JKRCityDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D978B1E9B545F00443D05 /* JKRCityDetail.m */; };
+		F37D978F1E9B54B300443D05 /* JKRCityArea.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D978E1E9B54B300443D05 /* JKRCityArea.m */; };
+		F37D97921E9B570600443D05 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = F37D97901E9B570600443D05 /* city.plist */; };
+		F37D97931E9B570600443D05 /* citydata.plist in Resources */ = {isa = PBXBuildFile; fileRef = F37D97911E9B570600443D05 /* citydata.plist */; };
+		F37D97961E9B5EF600443D05 /* JKRCitySection.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D97951E9B5EF600443D05 /* JKRCitySection.m */; };
+		F37D979C1E9B6DA400443D05 /* JKRInlandCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D979B1E9B6DA400443D05 /* JKRInlandCityCell.m */; };
+		F37D979F1E9B89B800443D05 /* JKRCitySelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D979E1E9B89B800443D05 /* JKRCitySelectCell.m */; };
+		F37D97A21E9B9BB700443D05 /* JKRNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D97A11E9B9BB700443D05 /* JKRNormalHeader.m */; };
+		F37D97A51E9B9BCF00443D05 /* JKRSelectHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D97A41E9B9BCF00443D05 /* JKRSelectHeader.m */; };
+		F37D97A81E9B9EFA00443D05 /* UIView+JKR_Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D97A71E9B9EFA00443D05 /* UIView+JKR_Frame.m */; };
+		F39AD4531E9B1509003F2279 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD4521E9B1509003F2279 /* main.m */; };
+		F39AD4561E9B150A003F2279 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD4551E9B150A003F2279 /* AppDelegate.m */; };
+		F39AD45E1E9B150B003F2279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39AD45D1E9B150B003F2279 /* Assets.xcassets */; };
+		F39AD4611E9B150B003F2279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39AD45F1E9B150B003F2279 /* LaunchScreen.storyboard */; };
+		F39AD46C1E9B150D003F2279 /* JKRAddressSelectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD46B1E9B150D003F2279 /* JKRAddressSelectorTests.m */; };
+		F39AD4771E9B150E003F2279 /* JKRAddressSelectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD4761E9B150E003F2279 /* JKRAddressSelectorUITests.m */; };
+		F39AD4961E9B19FF003F2279 /* UIColor+JKRColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD4951E9B19FF003F2279 /* UIColor+JKRColor.m */; };
+		F39AD4991E9B1AE2003F2279 /* AppDelegate+JKRRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD4981E9B1AE2003F2279 /* AppDelegate+JKRRootViewController.m */; };
+		F39AD49C1E9B1AEF003F2279 /* JKRRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD49B1E9B1AEF003F2279 /* JKRRootViewController.m */; };
+		F39AD4A21E9B1B50003F2279 /* JKRNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD4A11E9B1B50003F2279 /* JKRNavigationViewController.m */; };
+		F39AD4AE1E9B329F003F2279 /* JKRSelectAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD4AD1E9B329F003F2279 /* JKRSelectAddressController.m */; };
+		F39AD4B11E9B3883003F2279 /* JKRInlandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD4B01E9B3883003F2279 /* JKRInlandViewController.m */; };
+		F39AD4B41E9B38B6003F2279 /* JKRForeignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD4B31E9B38B6003F2279 /* JKRForeignViewController.m */; };
+		F39AD4B71E9B3978003F2279 /* JKRAddressStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD4B61E9B3978003F2279 /* JKRAddressStore.m */; };
+		F39AD4BA1E9B3BAC003F2279 /* JKRCity.m in Sources */ = {isa = PBXBuildFile; fileRef = F39AD4B91E9B3BAC003F2279 /* JKRCity.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F39AD4681E9B150D003F2279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F39AD4461E9B1508003F2279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F39AD44D1E9B1508003F2279;
+			remoteInfo = JKRAddressSelector;
+		};
+		F39AD4731E9B150E003F2279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F39AD4461E9B1508003F2279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F39AD44D1E9B1508003F2279;
+			remoteInfo = JKRAddressSelector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F37D97871E9B524F00443D05 /* JKRCityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCityData.h; sourceTree = "<group>"; };
+		F37D97881E9B524F00443D05 /* JKRCityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRCityData.m; sourceTree = "<group>"; };
+		F37D978A1E9B545F00443D05 /* JKRCityDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCityDetail.h; sourceTree = "<group>"; };
+		F37D978B1E9B545F00443D05 /* JKRCityDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRCityDetail.m; sourceTree = "<group>"; };
+		F37D978D1E9B54B300443D05 /* JKRCityArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCityArea.h; sourceTree = "<group>"; };
+		F37D978E1E9B54B300443D05 /* JKRCityArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRCityArea.m; sourceTree = "<group>"; };
+		F37D97901E9B570600443D05 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
+		F37D97911E9B570600443D05 /* citydata.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydata.plist; sourceTree = "<group>"; };
+		F37D97941E9B5EF600443D05 /* JKRCitySection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCitySection.h; sourceTree = "<group>"; };
+		F37D97951E9B5EF600443D05 /* JKRCitySection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRCitySection.m; sourceTree = "<group>"; };
+		F37D979A1E9B6DA400443D05 /* JKRInlandCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRInlandCityCell.h; sourceTree = "<group>"; };
+		F37D979B1E9B6DA400443D05 /* JKRInlandCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRInlandCityCell.m; sourceTree = "<group>"; };
+		F37D979D1E9B89B800443D05 /* JKRCitySelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCitySelectCell.h; sourceTree = "<group>"; };
+		F37D979E1E9B89B800443D05 /* JKRCitySelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRCitySelectCell.m; sourceTree = "<group>"; };
+		F37D97A01E9B9BB700443D05 /* JKRNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRNormalHeader.h; sourceTree = "<group>"; };
+		F37D97A11E9B9BB700443D05 /* JKRNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRNormalHeader.m; sourceTree = "<group>"; };
+		F37D97A31E9B9BCF00443D05 /* JKRSelectHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRSelectHeader.h; sourceTree = "<group>"; };
+		F37D97A41E9B9BCF00443D05 /* JKRSelectHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRSelectHeader.m; sourceTree = "<group>"; };
+		F37D97A61E9B9EFA00443D05 /* UIView+JKR_Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKR_Frame.h"; sourceTree = "<group>"; };
+		F37D97A71E9B9EFA00443D05 /* UIView+JKR_Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKR_Frame.m"; sourceTree = "<group>"; };
+		F39AD44E1E9B1508003F2279 /* JKRAddressSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKRAddressSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39AD4521E9B1509003F2279 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F39AD4541E9B150A003F2279 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F39AD4551E9B150A003F2279 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F39AD45D1E9B150B003F2279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F39AD4601E9B150B003F2279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F39AD4621E9B150C003F2279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F39AD4671E9B150D003F2279 /* JKRAddressSelectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKRAddressSelectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39AD46B1E9B150D003F2279 /* JKRAddressSelectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKRAddressSelectorTests.m; sourceTree = "<group>"; };
+		F39AD46D1E9B150E003F2279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F39AD4721E9B150E003F2279 /* JKRAddressSelectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKRAddressSelectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39AD4761E9B150E003F2279 /* JKRAddressSelectorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKRAddressSelectorUITests.m; sourceTree = "<group>"; };
+		F39AD4781E9B150E003F2279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F39AD4871E9B15FB003F2279 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		F39AD4941E9B19FF003F2279 /* UIColor+JKRColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKRColor.h"; sourceTree = "<group>"; };
+		F39AD4951E9B19FF003F2279 /* UIColor+JKRColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JKRColor.m"; sourceTree = "<group>"; };
+		F39AD4971E9B1AE2003F2279 /* AppDelegate+JKRRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JKRRootViewController.h"; sourceTree = "<group>"; };
+		F39AD4981E9B1AE2003F2279 /* AppDelegate+JKRRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JKRRootViewController.m"; sourceTree = "<group>"; };
+		F39AD49A1E9B1AEF003F2279 /* JKRRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRRootViewController.h; sourceTree = "<group>"; };
+		F39AD49B1E9B1AEF003F2279 /* JKRRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRRootViewController.m; sourceTree = "<group>"; };
+		F39AD4A01E9B1B50003F2279 /* JKRNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRNavigationViewController.h; sourceTree = "<group>"; };
+		F39AD4A11E9B1B50003F2279 /* JKRNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRNavigationViewController.m; sourceTree = "<group>"; };
+		F39AD4AC1E9B329F003F2279 /* JKRSelectAddressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRSelectAddressController.h; sourceTree = "<group>"; };
+		F39AD4AD1E9B329F003F2279 /* JKRSelectAddressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRSelectAddressController.m; sourceTree = "<group>"; };
+		F39AD4AF1E9B3883003F2279 /* JKRInlandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRInlandViewController.h; sourceTree = "<group>"; };
+		F39AD4B01E9B3883003F2279 /* JKRInlandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRInlandViewController.m; sourceTree = "<group>"; };
+		F39AD4B21E9B38B6003F2279 /* JKRForeignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRForeignViewController.h; sourceTree = "<group>"; };
+		F39AD4B31E9B38B6003F2279 /* JKRForeignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRForeignViewController.m; sourceTree = "<group>"; };
+		F39AD4B51E9B3978003F2279 /* JKRAddressStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRAddressStore.h; sourceTree = "<group>"; };
+		F39AD4B61E9B3978003F2279 /* JKRAddressStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRAddressStore.m; sourceTree = "<group>"; };
+		F39AD4B81E9B3BAC003F2279 /* JKRCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCity.h; sourceTree = "<group>"; };
+		F39AD4B91E9B3BAC003F2279 /* JKRCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRCity.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F39AD44B1E9B1508003F2279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39AD4641E9B150D003F2279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39AD46F1E9B150E003F2279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F37D97971E9B684A00443D05 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F39AD4B51E9B3978003F2279 /* JKRAddressStore.h */,
+				F39AD4B61E9B3978003F2279 /* JKRAddressStore.m */,
+				F37D97981E9B685300443D05 /* Model */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		F37D97981E9B685300443D05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F37D97941E9B5EF600443D05 /* JKRCitySection.h */,
+				F37D97951E9B5EF600443D05 /* JKRCitySection.m */,
+				F37D97871E9B524F00443D05 /* JKRCityData.h */,
+				F37D97881E9B524F00443D05 /* JKRCityData.m */,
+				F37D978A1E9B545F00443D05 /* JKRCityDetail.h */,
+				F37D978B1E9B545F00443D05 /* JKRCityDetail.m */,
+				F37D978D1E9B54B300443D05 /* JKRCityArea.h */,
+				F37D978E1E9B54B300443D05 /* JKRCityArea.m */,
+				F39AD4B81E9B3BAC003F2279 /* JKRCity.h */,
+				F39AD4B91E9B3BAC003F2279 /* JKRCity.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F37D97991E9B688100443D05 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F37D97A61E9B9EFA00443D05 /* UIView+JKR_Frame.h */,
+				F37D97A71E9B9EFA00443D05 /* UIView+JKR_Frame.m */,
+				F39AD4971E9B1AE2003F2279 /* AppDelegate+JKRRootViewController.h */,
+				F39AD4981E9B1AE2003F2279 /* AppDelegate+JKRRootViewController.m */,
+				F39AD4941E9B19FF003F2279 /* UIColor+JKRColor.h */,
+				F39AD4951E9B19FF003F2279 /* UIColor+JKRColor.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		F39AD4451E9B1508003F2279 = {
+			isa = PBXGroup;
+			children = (
+				F39AD4501E9B1509003F2279 /* JKRAddressSelector */,
+				F39AD46A1E9B150D003F2279 /* JKRAddressSelectorTests */,
+				F39AD4751E9B150E003F2279 /* JKRAddressSelectorUITests */,
+				F39AD44F1E9B1508003F2279 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F39AD44F1E9B1508003F2279 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F39AD44E1E9B1508003F2279 /* JKRAddressSelector.app */,
+				F39AD4671E9B150D003F2279 /* JKRAddressSelectorTests.xctest */,
+				F39AD4721E9B150E003F2279 /* JKRAddressSelectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F39AD4501E9B1509003F2279 /* JKRAddressSelector */ = {
+			isa = PBXGroup;
+			children = (
+				F39AD4871E9B15FB003F2279 /* Header.h */,
+				F39AD4541E9B150A003F2279 /* AppDelegate.h */,
+				F39AD4551E9B150A003F2279 /* AppDelegate.m */,
+				F39AD4A01E9B1B50003F2279 /* JKRNavigationViewController.h */,
+				F39AD4A11E9B1B50003F2279 /* JKRNavigationViewController.m */,
+				F39AD49A1E9B1AEF003F2279 /* JKRRootViewController.h */,
+				F39AD49B1E9B1AEF003F2279 /* JKRRootViewController.m */,
+				F39AD4AC1E9B329F003F2279 /* JKRSelectAddressController.h */,
+				F39AD4AD1E9B329F003F2279 /* JKRSelectAddressController.m */,
+				F39AD4AF1E9B3883003F2279 /* JKRInlandViewController.h */,
+				F39AD4B01E9B3883003F2279 /* JKRInlandViewController.m */,
+				F37D97A01E9B9BB700443D05 /* JKRNormalHeader.h */,
+				F37D97A11E9B9BB700443D05 /* JKRNormalHeader.m */,
+				F37D97A31E9B9BCF00443D05 /* JKRSelectHeader.h */,
+				F37D97A41E9B9BCF00443D05 /* JKRSelectHeader.m */,
+				F37D979D1E9B89B800443D05 /* JKRCitySelectCell.h */,
+				F37D979E1E9B89B800443D05 /* JKRCitySelectCell.m */,
+				F37D979A1E9B6DA400443D05 /* JKRInlandCityCell.h */,
+				F37D979B1E9B6DA400443D05 /* JKRInlandCityCell.m */,
+				F39AD4B21E9B38B6003F2279 /* JKRForeignViewController.h */,
+				F39AD4B31E9B38B6003F2279 /* JKRForeignViewController.m */,
+				F37D97991E9B688100443D05 /* Category */,
+				F37D97971E9B684A00443D05 /* Data */,
+				F37D97901E9B570600443D05 /* city.plist */,
+				F37D97911E9B570600443D05 /* citydata.plist */,
+				F39AD45D1E9B150B003F2279 /* Assets.xcassets */,
+				F39AD45F1E9B150B003F2279 /* LaunchScreen.storyboard */,
+				F39AD4621E9B150C003F2279 /* Info.plist */,
+				F39AD4511E9B1509003F2279 /* Supporting Files */,
+			);
+			path = JKRAddressSelector;
+			sourceTree = "<group>";
+		};
+		F39AD4511E9B1509003F2279 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F39AD4521E9B1509003F2279 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F39AD46A1E9B150D003F2279 /* JKRAddressSelectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F39AD46B1E9B150D003F2279 /* JKRAddressSelectorTests.m */,
+				F39AD46D1E9B150E003F2279 /* Info.plist */,
+			);
+			path = JKRAddressSelectorTests;
+			sourceTree = "<group>";
+		};
+		F39AD4751E9B150E003F2279 /* JKRAddressSelectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F39AD4761E9B150E003F2279 /* JKRAddressSelectorUITests.m */,
+				F39AD4781E9B150E003F2279 /* Info.plist */,
+			);
+			path = JKRAddressSelectorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F39AD44D1E9B1508003F2279 /* JKRAddressSelector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F39AD47B1E9B150F003F2279 /* Build configuration list for PBXNativeTarget "JKRAddressSelector" */;
+			buildPhases = (
+				F39AD44A1E9B1508003F2279 /* Sources */,
+				F39AD44B1E9B1508003F2279 /* Frameworks */,
+				F39AD44C1E9B1508003F2279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKRAddressSelector;
+			productName = JKRAddressSelector;
+			productReference = F39AD44E1E9B1508003F2279 /* JKRAddressSelector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F39AD4661E9B150D003F2279 /* JKRAddressSelectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F39AD47E1E9B150F003F2279 /* Build configuration list for PBXNativeTarget "JKRAddressSelectorTests" */;
+			buildPhases = (
+				F39AD4631E9B150D003F2279 /* Sources */,
+				F39AD4641E9B150D003F2279 /* Frameworks */,
+				F39AD4651E9B150D003F2279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F39AD4691E9B150D003F2279 /* PBXTargetDependency */,
+			);
+			name = JKRAddressSelectorTests;
+			productName = JKRAddressSelectorTests;
+			productReference = F39AD4671E9B150D003F2279 /* JKRAddressSelectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F39AD4711E9B150E003F2279 /* JKRAddressSelectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F39AD4811E9B150F003F2279 /* Build configuration list for PBXNativeTarget "JKRAddressSelectorUITests" */;
+			buildPhases = (
+				F39AD46E1E9B150E003F2279 /* Sources */,
+				F39AD46F1E9B150E003F2279 /* Frameworks */,
+				F39AD4701E9B150E003F2279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F39AD4741E9B150E003F2279 /* PBXTargetDependency */,
+			);
+			name = JKRAddressSelectorUITests;
+			productName = JKRAddressSelectorUITests;
+			productReference = F39AD4721E9B150E003F2279 /* JKRAddressSelectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F39AD4461E9B1508003F2279 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Joker;
+				TargetAttributes = {
+					F39AD44D1E9B1508003F2279 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					F39AD4661E9B150D003F2279 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F39AD44D1E9B1508003F2279;
+					};
+					F39AD4711E9B150E003F2279 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F39AD44D1E9B1508003F2279;
+					};
+				};
+			};
+			buildConfigurationList = F39AD4491E9B1508003F2279 /* Build configuration list for PBXProject "JKRAddressSelector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F39AD4451E9B1508003F2279;
+			productRefGroup = F39AD44F1E9B1508003F2279 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F39AD44D1E9B1508003F2279 /* JKRAddressSelector */,
+				F39AD4661E9B150D003F2279 /* JKRAddressSelectorTests */,
+				F39AD4711E9B150E003F2279 /* JKRAddressSelectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F39AD44C1E9B1508003F2279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37D97921E9B570600443D05 /* city.plist in Resources */,
+				F39AD4611E9B150B003F2279 /* LaunchScreen.storyboard in Resources */,
+				F39AD45E1E9B150B003F2279 /* Assets.xcassets in Resources */,
+				F37D97931E9B570600443D05 /* citydata.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39AD4651E9B150D003F2279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39AD4701E9B150E003F2279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F39AD44A1E9B1508003F2279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39AD4B11E9B3883003F2279 /* JKRInlandViewController.m in Sources */,
+				F39AD4561E9B150A003F2279 /* AppDelegate.m in Sources */,
+				F39AD4B71E9B3978003F2279 /* JKRAddressStore.m in Sources */,
+				F37D97A21E9B9BB700443D05 /* JKRNormalHeader.m in Sources */,
+				F37D978C1E9B545F00443D05 /* JKRCityDetail.m in Sources */,
+				F37D979C1E9B6DA400443D05 /* JKRInlandCityCell.m in Sources */,
+				F39AD4AE1E9B329F003F2279 /* JKRSelectAddressController.m in Sources */,
+				F37D978F1E9B54B300443D05 /* JKRCityArea.m in Sources */,
+				F39AD4BA1E9B3BAC003F2279 /* JKRCity.m in Sources */,
+				F39AD4B41E9B38B6003F2279 /* JKRForeignViewController.m in Sources */,
+				F37D979F1E9B89B800443D05 /* JKRCitySelectCell.m in Sources */,
+				F39AD4531E9B1509003F2279 /* main.m in Sources */,
+				F37D97961E9B5EF600443D05 /* JKRCitySection.m in Sources */,
+				F39AD4961E9B19FF003F2279 /* UIColor+JKRColor.m in Sources */,
+				F37D97A81E9B9EFA00443D05 /* UIView+JKR_Frame.m in Sources */,
+				F39AD49C1E9B1AEF003F2279 /* JKRRootViewController.m in Sources */,
+				F39AD4A21E9B1B50003F2279 /* JKRNavigationViewController.m in Sources */,
+				F37D97A51E9B9BCF00443D05 /* JKRSelectHeader.m in Sources */,
+				F37D97891E9B524F00443D05 /* JKRCityData.m in Sources */,
+				F39AD4991E9B1AE2003F2279 /* AppDelegate+JKRRootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39AD4631E9B150D003F2279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39AD46C1E9B150D003F2279 /* JKRAddressSelectorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39AD46E1E9B150E003F2279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39AD4771E9B150E003F2279 /* JKRAddressSelectorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F39AD4691E9B150D003F2279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F39AD44D1E9B1508003F2279 /* JKRAddressSelector */;
+			targetProxy = F39AD4681E9B150D003F2279 /* PBXContainerItemProxy */;
+		};
+		F39AD4741E9B150E003F2279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F39AD44D1E9B1508003F2279 /* JKRAddressSelector */;
+			targetProxy = F39AD4731E9B150E003F2279 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F39AD45F1E9B150B003F2279 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F39AD4601E9B150B003F2279 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F39AD4791E9B150F003F2279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F39AD47A1E9B150F003F2279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F39AD47C1E9B150F003F2279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = JKRAddressSelector/Header.h;
+				INFOPLIST_FILE = JKRAddressSelector/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Joker.JKRAddressSelector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F39AD47D1E9B150F003F2279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = JKRAddressSelector/Header.h;
+				INFOPLIST_FILE = JKRAddressSelector/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Joker.JKRAddressSelector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F39AD47F1E9B150F003F2279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JKRAddressSelectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Joker.JKRAddressSelectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKRAddressSelector.app/JKRAddressSelector";
+			};
+			name = Debug;
+		};
+		F39AD4801E9B150F003F2279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JKRAddressSelectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Joker.JKRAddressSelectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKRAddressSelector.app/JKRAddressSelector";
+			};
+			name = Release;
+		};
+		F39AD4821E9B150F003F2279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JKRAddressSelectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Joker.JKRAddressSelectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JKRAddressSelector;
+			};
+			name = Debug;
+		};
+		F39AD4831E9B150F003F2279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JKRAddressSelectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Joker.JKRAddressSelectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JKRAddressSelector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F39AD4491E9B1508003F2279 /* Build configuration list for PBXProject "JKRAddressSelector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39AD4791E9B150F003F2279 /* Debug */,
+				F39AD47A1E9B150F003F2279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F39AD47B1E9B150F003F2279 /* Build configuration list for PBXNativeTarget "JKRAddressSelector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39AD47C1E9B150F003F2279 /* Debug */,
+				F39AD47D1E9B150F003F2279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F39AD47E1E9B150F003F2279 /* Build configuration list for PBXNativeTarget "JKRAddressSelectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39AD47F1E9B150F003F2279 /* Debug */,
+				F39AD4801E9B150F003F2279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F39AD4811E9B150F003F2279 /* Build configuration list for PBXNativeTarget "JKRAddressSelectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39AD4821E9B150F003F2279 /* Debug */,
+				F39AD4831E9B150F003F2279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F39AD4461E9B1508003F2279 /* Project object */;
+}
