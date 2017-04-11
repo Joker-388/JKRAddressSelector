@@ -49,13 +49,14 @@
     [JKRAddressStore sharedJKRAddressStore].currentCity.headerTitle = [NSString stringWithFormat:@"当前：%@全城", self.citySection.cityArray[index].name];
     [[JKRAddressStore sharedJKRAddressStore].currentCity.cityArray removeAllObjects];
     [[JKRAddressStore sharedJKRAddressStore].currentCity.cityArray addObject:self.citySection.cityArray[index]];
-    if ([JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray.firstObject == [JKRAddressStore sharedJKRAddressStore].defaultCity || [JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray.count >= 3) {
-        [[JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray removeObjectAtIndex:0];
-    }
+    JKRCity *addedCity = self.citySection.cityArray[index];
     if ([[JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray containsObject:self.citySection.cityArray[index]]) {
         [[JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray removeObject:self.citySection.cityArray[index]];
     }
-    [[JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray addObject:self.citySection.cityArray[index]];
+    [[JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray addObject:addedCity];
+    if ([JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray.firstObject == [JKRAddressStore sharedJKRAddressStore].defaultCity || [JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray.count > 3) {
+        [[JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray removeObjectAtIndex:0];
+    }
     [self.jkr_viewController dismissViewControllerAnimated:YES completion:nil];
 }
 
