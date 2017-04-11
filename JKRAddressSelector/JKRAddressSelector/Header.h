@@ -61,4 +61,6 @@ return __singleton; \
 #define kScreenHeight [[UIScreen mainScreen] bounds].size.height
 #import "JKRAddressStore.h"
 #import "UIView+JKR_Frame.h"
+#import "UIView+JKRViewController.h"
+#import "UIView+JKRTapGestureRecognizer.h"
 #endif /* Header_h */

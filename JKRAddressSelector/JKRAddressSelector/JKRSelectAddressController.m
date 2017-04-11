@@ -82,4 +82,8 @@
     return _segmentedControl;
 }
 
+- (void)dealloc {
+    NSLog(@"Address controller dealloc");
+}
+
 @end

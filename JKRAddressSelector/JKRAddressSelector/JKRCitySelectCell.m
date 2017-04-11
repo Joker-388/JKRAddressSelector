@@ -35,9 +35,28 @@
         button.layer.borderColor = JKRColor(227, 226, 228, 1.0).CGColor;
         button.layer.cornerRadius = 5;
         button.layer.cornerRadius = YES;
+        button.layer.borderWidth = 1;
+        button.titleLabel.font = [UIFont systemFontOfSize:14];
         button.frame = CGRectMake(marginH + (marginH + buttonW) * (i % 3), (marginV + buttonH) * (i / 3), buttonW, buttonH);
+        button.accessibilityValue = [NSString stringWithFormat:@"%zd", i];
         [self.contentView addSubview:button];
+        [button addTarget:self action:@selector(cityClickWithButton:) forControlEvents:UIControlEventTouchUpInside];
     }
+}
+
+- (void)cityClickWithButton:(UIButton *)sender {
+    NSInteger index = [sender.accessibilityValue integerValue];
+    [JKRAddressStore sharedJKRAddressStore].currentCity.headerTitle = [NSString stringWithFormat:@"当前：%@全城", self.citySection.cityArray[index].name];
+    [[JKRAddressStore sharedJKRAddressStore].currentCity.cityArray removeAllObjects];
+    [[JKRAddressStore sharedJKRAddressStore].currentCity.cityArray addObject:self.citySection.cityArray[index]];
+    if ([JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray.firstObject == [JKRAddressStore sharedJKRAddressStore].defaultCity || [JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray.count >= 3) {
+        [[JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray removeObjectAtIndex:0];
+    }
+    if ([[JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray containsObject:self.citySection.cityArray[index]]) {
+        [[JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray removeObject:self.citySection.cityArray[index]];
+    }
+    [[JKRAddressStore sharedJKRAddressStore].searchHistoryCity.cityArray addObject:self.citySection.cityArray[index]];
+    [self.jkr_viewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

@@ -14,12 +14,23 @@ singleton_implementation(JKRAddressStore)
 
 - (NSArray *)cityArray {
     if (!_cityArray) {
+        NSMutableArray<JKRCityDetail *> *cityDetailArray = [NSMutableArray array];
+        [self.cityDataArray enumerateObjectsUsingBlock:^(JKRCityData * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if (obj.citylist) [cityDetailArray addObjectsFromArray:obj.citylist];
+        }];
+        
         NSMutableArray *result = [NSMutableArray array];
         NSString *cityPath = [[NSBundle mainBundle] pathForResource:@"city" ofType:@"plist"];
         NSArray *array = [NSArray arrayWithContentsOfFile:cityPath];
         for (NSDictionary *dict in array) {
             JKRCity *city = [[JKRCity alloc] init];
             [city setValuesForKeysWithDictionary:dict];
+            for (JKRCityDetail *cityDetail in cityDetailArray) {
+                if ([cityDetail.cityName isEqualToString:city.name]) {
+                    city.arealist = cityDetail.arealist;
+                    break;
+                }
+            }
             [result addObject:city];
         }
         _cityArray = [NSArray arrayWithArray:result];
@@ -78,14 +89,14 @@ singleton_implementation(JKRAddressStore)
 
 - (JKRCitySection *)locationCity {
     if (!_locationCity) {
-        _locationCity = [[JKRCitySection alloc] initWithTitle:@"定位城市" cities:@[self.defaultCity]];
+        _locationCity = [[JKRCitySection alloc] initWithTitle:@"定位城市" cities:@[]];
     }
     return _locationCity;
 }
 
 - (JKRCitySection *)searchHistoryCity {
     if (!_searchHistoryCity) {
-        _searchHistoryCity = [[JKRCitySection alloc] initWithTitle:@"最近访问城市" cities:@[self.defaultCity]];
+        _searchHistoryCity = [[JKRCitySection alloc] initWithTitle:@"最近访问城市" cities:@[]];
     }
     return _searchHistoryCity;
 }

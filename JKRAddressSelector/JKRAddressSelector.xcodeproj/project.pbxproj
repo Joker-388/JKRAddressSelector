@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0512502F1E9BCD5C0068615B /* JKRSelectAreaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0512502E1E9BCD5C0068615B /* JKRSelectAreaButton.m */; };
 		051250391E9BD6020068615B /* JKRAreaSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 051250381E9BD6020068615B /* JKRAreaSelectCell.m */; };
+		F358C5B21E9C8C0700D93A99 /* UIView+JKRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F358C5B11E9C8C0700D93A99 /* UIView+JKRViewController.m */; };
+		F358C5B51E9CA50C00D93A99 /* JKRShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F358C5B41E9CA50C00D93A99 /* JKRShadowView.m */; };
+		F358C5B81E9CA61600D93A99 /* UIView+JKRTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F358C5B71E9CA61600D93A99 /* UIView+JKRTapGestureRecognizer.m */; };
 		F37D97891E9B524F00443D05 /* JKRCityData.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D97881E9B524F00443D05 /* JKRCityData.m */; };
 		F37D978C1E9B545F00443D05 /* JKRCityDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D978B1E9B545F00443D05 /* JKRCityDetail.m */; };
 		F37D978F1E9B54B300443D05 /* JKRCityArea.m in Sources */ = {isa = PBXBuildFile; fileRef = F37D978E1E9B54B300443D05 /* JKRCityArea.m */; };
@@ -59,6 +62,12 @@
 		0512502E1E9BCD5C0068615B /* JKRSelectAreaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRSelectAreaButton.m; sourceTree = "<group>"; };
 		051250371E9BD6020068615B /* JKRAreaSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRAreaSelectCell.h; sourceTree = "<group>"; };
 		051250381E9BD6020068615B /* JKRAreaSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRAreaSelectCell.m; sourceTree = "<group>"; };
+		F358C5B01E9C8C0700D93A99 /* UIView+JKRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKRViewController.h"; sourceTree = "<group>"; };
+		F358C5B11E9C8C0700D93A99 /* UIView+JKRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKRViewController.m"; sourceTree = "<group>"; };
+		F358C5B31E9CA50C00D93A99 /* JKRShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRShadowView.h; sourceTree = "<group>"; };
+		F358C5B41E9CA50C00D93A99 /* JKRShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRShadowView.m; sourceTree = "<group>"; };
+		F358C5B61E9CA61600D93A99 /* UIView+JKRTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKRTapGestureRecognizer.h"; sourceTree = "<group>"; };
+		F358C5B71E9CA61600D93A99 /* UIView+JKRTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKRTapGestureRecognizer.m"; sourceTree = "<group>"; };
 		F37D97871E9B524F00443D05 /* JKRCityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCityData.h; sourceTree = "<group>"; };
 		F37D97881E9B524F00443D05 /* JKRCityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRCityData.m; sourceTree = "<group>"; };
 		F37D978A1E9B545F00443D05 /* JKRCityDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCityDetail.h; sourceTree = "<group>"; };
@@ -143,6 +152,8 @@
 			children = (
 				F39AD4AF1E9B3883003F2279 /* JKRInlandViewController.h */,
 				F39AD4B01E9B3883003F2279 /* JKRInlandViewController.m */,
+				F358C5B31E9CA50C00D93A99 /* JKRShadowView.h */,
+				F358C5B41E9CA50C00D93A99 /* JKRShadowView.m */,
 				051250321E9BD3A30068615B /* Header */,
 				051250331E9BD3A90068615B /* Cell */,
 			);
@@ -232,6 +243,10 @@
 		F37D97991E9B688100443D05 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F358C5B61E9CA61600D93A99 /* UIView+JKRTapGestureRecognizer.h */,
+				F358C5B71E9CA61600D93A99 /* UIView+JKRTapGestureRecognizer.m */,
+				F358C5B01E9C8C0700D93A99 /* UIView+JKRViewController.h */,
+				F358C5B11E9C8C0700D93A99 /* UIView+JKRViewController.m */,
 				F37D97A61E9B9EFA00443D05 /* UIView+JKR_Frame.h */,
 				F37D97A71E9B9EFA00443D05 /* UIView+JKR_Frame.m */,
 				F39AD4971E9B1AE2003F2279 /* AppDelegate+JKRRootViewController.h */,
@@ -451,16 +466,19 @@
 				F39AD4B71E9B3978003F2279 /* JKRAddressStore.m in Sources */,
 				F37D97A21E9B9BB700443D05 /* JKRNormalHeader.m in Sources */,
 				F37D978C1E9B545F00443D05 /* JKRCityDetail.m in Sources */,
+				F358C5B81E9CA61600D93A99 /* UIView+JKRTapGestureRecognizer.m in Sources */,
 				F37D979C1E9B6DA400443D05 /* JKRInlandCityCell.m in Sources */,
 				F39AD4AE1E9B329F003F2279 /* JKRSelectAddressController.m in Sources */,
 				0512502F1E9BCD5C0068615B /* JKRSelectAreaButton.m in Sources */,
 				F37D978F1E9B54B300443D05 /* JKRCityArea.m in Sources */,
 				F39AD4BA1E9B3BAC003F2279 /* JKRCity.m in Sources */,
+				F358C5B51E9CA50C00D93A99 /* JKRShadowView.m in Sources */,
 				F39AD4B41E9B38B6003F2279 /* JKRForeignViewController.m in Sources */,
 				F37D979F1E9B89B800443D05 /* JKRCitySelectCell.m in Sources */,
 				F39AD4531E9B1509003F2279 /* main.m in Sources */,
 				F37D97961E9B5EF600443D05 /* JKRCitySection.m in Sources */,
 				F39AD4961E9B19FF003F2279 /* UIColor+JKRColor.m in Sources */,
+				F358C5B21E9C8C0700D93A99 /* UIView+JKRViewController.m in Sources */,
 				F37D97A81E9B9EFA00443D05 /* UIView+JKR_Frame.m in Sources */,
 				F39AD49C1E9B1AEF003F2279 /* JKRRootViewController.m in Sources */,
 				F39AD4A21E9B1B50003F2279 /* JKRNavigationViewController.m in Sources */,

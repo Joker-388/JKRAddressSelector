@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JKRCityArea.h"
 
 @interface JKRCity : NSObject
 
@@ -17,5 +18,7 @@
 @property (nonatomic, strong) NSString *lng;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *pinyin;
+@property (nonatomic, strong) NSArray<JKRCityArea *> *arealist;
+@property (nonatomic, strong) JKRCityArea *selectArea;
 
 @end

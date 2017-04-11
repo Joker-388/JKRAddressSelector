@@ -10,4 +10,6 @@
 
 @interface JKRAreaSelectCell : UITableViewCell
 
+@property (nonatomic, strong) JKRCitySection *citySection;;
+
 @end

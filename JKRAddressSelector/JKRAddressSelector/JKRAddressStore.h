@@ -14,7 +14,7 @@
 @interface JKRAddressStore : NSObject
 
 @property (nonatomic, strong) NSArray<JKRCity *> *cityArray;              ///< 城市列表
-@property (nonatomic, strong) NSArray *cityDataArray;                     ///< 城市区域列表
+@property (nonatomic, strong) NSArray<JKRCityData *> *cityDataArray;      ///< 城市区域列表
 @property (nonatomic, strong) JKRCitySection *currentCity;                ///< 当前选择城市
 @property (nonatomic, strong) JKRCitySection *locationCity;               ///< 当前定位城市
 @property (nonatomic, strong) JKRCitySection *searchHistoryCity;          ///< 搜索历史城市

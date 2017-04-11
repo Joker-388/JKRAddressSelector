@@ -20,6 +20,13 @@
     _arealist = [NSArray arrayWithArray:result];
 }
 
+- (void)setCityName:(NSString *)cityName {
+    if ([cityName hasSuffix:@"市"]) {
+        cityName = [cityName substringToIndex:cityName.length - 1];
+    }
+    _cityName = cityName;
+}
+
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {
     if ([key isEqualToString:@"id"]) {
         self.cityID = value;

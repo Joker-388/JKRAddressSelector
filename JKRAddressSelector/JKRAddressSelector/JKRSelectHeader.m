@@ -19,7 +19,7 @@
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithReuseIdentifier:reuseIdentifier];
     self.contentView.backgroundColor = [UIColor whiteColor];
-    self.headerLabel.frame = CGRectMake(10, 0, 150, 44);
+    self.headerLabel.frame = CGRectMake(10, 0, 300, 44);
     [self.contentView addSubview:self.headerLabel];
     self.selectAreaButton.frame = CGRectMake(kScreenWidth - 100.f, 0.f, 80.f, 44.f);
     [self.contentView addSubview:self.selectAreaButton];

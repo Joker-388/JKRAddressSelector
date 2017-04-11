@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JKRInlandViewController : UITableViewController
+@interface JKRInlandViewController : UIViewController
 
 @end
